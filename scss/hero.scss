@@ -1,0 +1,32 @@
+@use "variables";
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  background-color: #F8FBFA;
+  &__image {
+    position: absolute;
+    right: 0;
+    height: auto;
+    margin-left: -10px;
+  }
+
+  &__wrap {
+    padding: 160px 0;
+    color: variables.$primary-text-color;
+    &-title {
+       
+        font-weight: 700;
+        font-size: 36px;
+        width: 30%;
+        margin-bottom: 14px;
+    }
+    &-text {
+        font-size: 16px;
+        line-height: 24px;
+        width: 30%;
+
+    }
+  }
+}

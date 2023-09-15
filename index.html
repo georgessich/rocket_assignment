@@ -1,12 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>Your Page</title>
-</head>
-<body>
-  <h1>Hello, World!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Многопрофильная клиника для детей</title>
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <div class="header__top container">
+          <a class="header__top-logo"
+            ><img src="/img/logo-header.svg" alt="Logo"
+          /></a>
+          <div class="header__top-address">
+            <p class="header__top-address--city">Ростов-на-Дону</p>
+            <p class="header__top-address--street">ул. Ленина, 2Б</p>
+          </div>
+          <div class="header__top-tel"><img src="./img/whatsapp-header.svg" alt=""><a href="tel:+78630000000" class="header__top-tel--text">+7(863) 000 00 00</a
+            ></div>
+          <button class="header__top-btn">Записаться на прием</button>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list container">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-item">О клинике</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-item">Услуги</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-item">Специалисты</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-item">Цены</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-item">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- <section class="hero">
+      <div class="hero__container container">
+        <div class="hero__wrap">
+          <h1 class="hero__wrap-title">Многопрофильная клиника для детей
+            и взрослых</h1>
+          <p class="hero__wrap-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        </div>
+        <img src="./img/hero-image.png" alt="детская клиника" class="hero__image">
+      </div>
+    </section> -->
+    <section class="hero">
+      <div class="hero__container container">
+        <div class="hero__wrap">
+          <h1 class="hero__wrap-title">Многопрофильная клиника для детей и взрослых</h1>
+          <p class="hero__wrap-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        </div>
+        
+      </div>
+      <img src="./img/hero-image.png" alt="детская клиника" class="hero__image">
+    </section>
+    <section class="services">
+      <div class="container">
+        <div class="servicer__slider">
+          <div class="services__slide">
+            <div class="services__slide-text">
+              <p class="services__slide-text--title">CHECK-UP</p>
+              <p class="services__slide-text--subtitle">для мужчин</p>
+              <ul class="services__slide-text--list">
+                <li>Гормональный скрининг</li>
+                <li>Тестостерон</li>
+                <li>Свободный тестостерон</li>
+                <li>Глобулин, связывающий половые гормоны</li>
+              </ul>
+              <p class="service__slide-text--price">Всего 2800₽<span class="service__slide-text--oldprice">3500₽</span></p>
+              <div class="services__slide-btns">
+                <button class="services__slide-btns--cta"></button>Записаться<button class="services__slide-btns--details">Подробнее</button>
+              </div>
+            </div>
+            <img src="img/doctor-working-table.png" alt="врач за столом" class="services__slide-img">
+           
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__wrap container">
+        <a href="#" class="footer__logo"
+          ><img src="./img/logo-footer.svg" alt=""
+        /></a>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">О клинике</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Услуги</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Специалисты</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Цены</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link"
+            ><img
+              src="/img/instagram.png"
+              alt="instagram"
+              class="footer__social-icon" /></a
+          ><a href="#" class="footer__social-link"
+            ><img
+              src="/img/whatsapp.png"
+              alt="whatsapp"
+              class="footer__social-icon" /></a
+          ><a href="#" class="footer__social-link"
+            ><img src="/img/telegram.png" alt="telegram" class="footer__social-icon"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

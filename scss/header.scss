@@ -1,0 +1,62 @@
+@use "variables";
+@use "mixins";
+.header {
+  &__top {
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-address {
+      font-size: 14px;
+      &--city {
+        position: relative;
+        color: variables.$primary-text-color;
+        &::before {
+          content: "";
+          position: absolute;
+          background-image: url("../img/pin.svg");
+          width: 20px;
+          height: 20px;
+          left: -22px;
+        }
+      }
+      &--street {
+        color: variables.$secondary-text-color;
+      }
+    }
+
+    &-tel {
+      display: flex;
+      align-items: center;
+      &--text {
+        font-size: 16px;
+        color: variables.$primary-text-color;
+        padding-left: 9px;
+      }
+    }
+
+    &-btn {
+      color: #fff;
+      font-size: 14px;
+      padding: 11px 24px;
+      background-color: variables.$button-color;
+      border-radius: 50px;
+      transition: all 0.3s ease-in;
+      &:hover {
+        background-color: variables.$button-hover;
+      }
+    }
+  }
+
+  &__nav {
+    background-color: variables.$header-color;
+
+    &-list {
+      @include mixins.navlist;
+    }
+
+    &-item {
+      @include mixins.navitem;
+    }
+  }
+}

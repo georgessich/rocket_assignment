@@ -1,0 +1,30 @@
+@use "variables";
+@use "mixins";
+.footer {
+    background-color: variables.$footer-color;
+
+    &__wrap {
+        display: flex;
+        padding: 59px 0;
+        justify-content: space-between;
+    }
+
+    &__nav {
+        
+
+        &-list{
+            @include mixins.navlist;
+        }
+        
+        &-link {
+            @include mixins.navitem;
+        }
+    }
+
+    &__social {
+
+        &-link {
+            margin-right: 15px;
+        }
+    }
+}
