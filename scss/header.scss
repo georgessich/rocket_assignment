@@ -36,15 +36,8 @@
     }
 
     &-btn {
-      color: #fff;
-      font-size: 14px;
-      padding: 11px 24px;
-      background-color: variables.$button-color;
-      border-radius: 50px;
-      transition: all 0.3s ease-in;
-      &:hover {
-        background-color: variables.$button-hover;
-      }
+     @include mixins.greenButton;
+     padding: 11px 24px;
     }
   }
 

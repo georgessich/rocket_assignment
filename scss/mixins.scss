@@ -1,3 +1,5 @@
+@use "variables";
+
 @mixin navlist{
     display: flex;
     gap: 30px;
@@ -11,5 +13,29 @@
     transition: all 0.1s ease-in;
   &:hover {
     color: #eeeaea;
+  }
+}
+
+@mixin greenButton {
+  color: #fff;
+  font-size: 14px;
+  background-color: variables.$button-color;
+  border-radius: 50px;
+  transition: all 0.3s ease-in;
+  &:hover {
+    background-color: variables.$button-hover;
+  }
+}
+
+@mixin transparentButton {
+  color: variables.$button-color;
+  font-size: 14px;
+  background-color: transparent;
+  border-radius: 50px;
+  transition: all 0.3s ease-in;
+  border: 1px solid variables.$button-color;
+  &:hover {
+    background-color: variables.$button-color;
+    color: #fff;
   }
 }

@@ -1,20 +1,45 @@
 @use "variables";
+@use "mixins";
 .services {
   padding-top: 100px;
 
   &__slider {
     margin-bottom: 92px;
+    display: flex;
+    flex-direction: column;
+    &-btns {
+      padding-top: 34px;
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+
+      &--number {
+        padding: 0 36px;
+        font-size: 18px;
+        color: variables.$primary-text-color;
+      }
+      &--number span {
+        color: #C0C0C0;
+      }
+      &--btnleft svg, &--btnright svg{
+        fill:#E1E1E1;
+        &:hover {
+          fill: variables.$button-color;
+          transition: fill 0.3s;
+        }
+      }
+    }
   }
   &__slide {
     display: flex;
     background-color: #e2f0ef;
     justify-content: space-between;
     color: variables.$primary-text-color;
+    border-radius: 5px;
     &-text {
       padding: 56px 63px;
       position: relative;
-      z-index: 1;
-      clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+
       &--title {
         font-size: 38px;
         font-weight: 700;
@@ -23,6 +48,10 @@
         font-size: 22px;
         font-weight: 700;
         margin-bottom: 16px;
+      }
+
+      &--list {
+        margin-bottom: 33px;
       }
 
       &--list li {
@@ -34,12 +63,34 @@
           margin-right: 9px;
         }
       }
-    }
+      &--price {
+        font-size: 20px;
+        color: variables.$primary-text-color;
+      }
 
+      &--oldprice {
+        font-size: 16px;
+        color: variables.$secondary-text-color;
+        text-decoration: line-through;
+        margin-left: 16px;
+      }
+    }
+    &-btns {
+      margin-top: 37px;
+      display: flex;
+      &--cta {
+        @include mixins.greenButton;
+        padding: 11px 59px;
+      }
+      &--details {
+        @include mixins.transparentButton;
+        padding: 11px 59px;
+        margin-left: 14px;
+      }
+    }
     &-img {
-        flex: 1;
-        position: relative;
-        z-index: 0;
+      -webkit-clip-path: polygon(6% 0, 100% 0, 100% 100%, 25% 100%);
+      clip-path: polygon(6% 0, 100% 0, 100% 100%, 25% 100%);
     }
   }
 }
