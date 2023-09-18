@@ -20,7 +20,9 @@ ctaButtons.forEach((button) => {
     button.addEventListener('click', openModal);
   });
 emailForm.addEventListener('submit', (e) => {
-  e.preventDefault(); 
+  e.preventDefault();
+  document.getElementById('emailInput').value = '';
+  
   closeModal(); 
 
 });

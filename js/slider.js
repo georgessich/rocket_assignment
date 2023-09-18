@@ -2,7 +2,7 @@ const slideButtons = document.querySelectorAll('.services__slider-btns--btnleft,
 const slideNumber = document.querySelector('.services__slider-btns--number');
 const slides = document.querySelectorAll('.services__slide');
 let currentSlideIndex = 0;
-// Функция для отображения текущего слайда
+
 function showSlide(index) {
   slides.forEach((slide, i) => {
     if (i === index) {
@@ -14,7 +14,7 @@ function showSlide(index) {
   slideNumber.innerHTML = `${index + 1}/<span>${slides.length}</span>`;
 }
 console.log(slideButtons)
-// Нажатие кнопки "Вперед"
+
 slideButtons[1].addEventListener('click', function () {
   currentSlideIndex++;
   if (currentSlideIndex >= slides.length) {
@@ -23,7 +23,7 @@ slideButtons[1].addEventListener('click', function () {
   showSlide(currentSlideIndex);
 });
 
-// Нажатие кнопки "Назад"
+
 slideButtons[0].addEventListener('click', function () {
   currentSlideIndex--;
   if (currentSlideIndex < 0) {
@@ -32,5 +32,5 @@ slideButtons[0].addEventListener('click', function () {
   showSlide(currentSlideIndex);
 });
 
-// Показать первый слайд при загрузке страницы
+
 showSlide(currentSlideIndex);
