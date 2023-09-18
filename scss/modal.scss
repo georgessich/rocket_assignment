@@ -1,0 +1,71 @@
+@use "variables";
+@use "mixins";
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+
+    
+    align-items: center;
+
+    &__content {
+        background-color: #fff;
+        width: 30%;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 5px;
+        color: variables.$primary-text-color;
+        position: relative;
+
+        &-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 32px;
+            cursor: pointer;
+            transition: all .3s ease;
+            &:hover {
+                color: #0d0e0e;
+            }
+        }
+
+        &-title {
+            font-size: 32px;
+            
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        &-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-label {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        &-input {
+            border: 1px solid variables.$primary-text-color;
+            font-size: 24px;
+            border-radius: 5px;
+            padding: 2px 6px;
+            margin-bottom: 24px;
+        }
+
+        &-sent {
+            @include mixins.greenButton;
+            align-self: center;
+            padding: 11px 24px;
+        }
+    }
+  }
+  
+ 
+  

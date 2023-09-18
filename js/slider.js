@@ -11,7 +11,7 @@ function showSlide(index) {
       slide.style.display = 'none';
     }
   });
-  slideNumber.textContent = `${index + 1}/${slides.length}`;
+  slideNumber.innerHTML = `${index + 1}/<span>${slides.length}</span>`;
 }
 console.log(slideButtons)
 // Нажатие кнопки "Вперед"

@@ -100,17 +100,17 @@
           </div>
           <div class="services__slide">
             <div class="services__slide-text">
-              <p class="services__slide-text--title">CHECK-UP</p>
-              <p class="services__slide-text--subtitle">для мужчин</p>
+              <p class="services__slide-text--title">Медосмотр</p>
+              <p class="services__slide-text--subtitle">для женщин</p>
               <ul class="services__slide-text--list">
-                <li>Гормональный скрининг</li>
-                <li>Тестостерон</li>
-                <li>Свободный тестостерон</li>
-                <li>Глобулин, связывающий половые гормоны</li>
+                <li>Общий анализ крови</li>
+                <li>Анализ мочи</li>
+                <li>УЗИ органов малого таза</li>
+                <li>Гинекологическое обследование</li>
               </ul>
               <p class="services__slide-text--price">
-                Всего 2800₽<span class="services__slide-text--oldprice"
-                  >3500₽</span
+                Всего 3200₽<span class="services__slide-text--oldprice"
+                  >3900₽</span
                 >
               </p>
               <div class="services__slide-btns">
@@ -121,8 +121,64 @@
               </div>
             </div>
             <img
-              src="img/doctor-working-table.png"
-              alt="врач за столом"
+              src="img/doctor-examining-woman.png"
+              alt="врач осматривает женщину"
+              class="services__slide-img"
+            />
+          </div>
+          <div class="services__slide">
+            <div class="services__slide-text">
+              <p class="services__slide-text--title">Детский медосмотр</p>
+              <p class="services__slide-text--subtitle">для детей</p>
+              <ul class="services__slide-text--list">
+                <li>Физическое обследование</li>
+                <li>Иммунизация</li>
+                <li>Зубная гигиена</li>
+                <li>Педиатрическая консультация</li>
+              </ul>
+              <p class="services__slide-text--price">
+                Всего 2500₽<span class="services__slide-text--oldprice"
+                  >3100₽</span
+                >
+              </p>
+              <div class="services__slide-btns">
+                <button class="services__slide-btns--cta">Записаться</button
+                ><button class="services__slide-btns--details">
+                  Подробнее
+                </button>
+              </div>
+            </div>
+            <img
+              src="img/doctor-examining-child.png"
+              alt="врач осматривает ребенка"
+              class="services__slide-img"
+            />
+          </div>
+          <div class="services__slide">
+            <div class="services__slide-text">
+              <p class="services__slide-text--title">Диагностика зрения</p>
+              <p class="services__slide-text--subtitle">для всех возрастов</p>
+              <ul class="services__slide-text--list">
+                <li>Проверка зрения на аппарате</li>
+                <li>Подбор очков и линз</li>
+                <li>Консультация офтальмолога</li>
+                <li>Диагностика заболеваний глаз</li>
+              </ul>
+              <p class="services__slide-text--price">
+                Всего 1800₽<span class="services__slide-text--oldprice"
+                  >2200₽</span
+                >
+              </p>
+              <div class="services__slide-btns">
+                <button class="services__slide-btns--cta">Записаться</button
+                ><button class="services__slide-btns--details">
+                  Подробнее
+                </button>
+              </div>
+            </div>
+            <img
+              src="img/eye-doctor.png"
+              alt="офтальмолог работает с пациентом"
               class="services__slide-img"
             />
           </div>
@@ -193,6 +249,18 @@
         </div>
       </div>
     </footer>
+    <div class="modal" id="myModal">
+      <div class="modal__content">
+          <span class="modal__content-close" id="closeModalBtn">&times;</span>
+          <h2 class="modal__content-title">Запись на прием</h2>
+          <form class="modal__content-form" id="emailForm">
+              <label class="modal__content-label" for="emailInput">Введите ваш email:</label>
+              <input class="modal__content-input" type="email" id="emailInput" name="email" placeholder="Ваш email">
+              <button class="modal__content-sent" type="submit" id="submitEmailBtn">Отправить</button>
+          </form>
+      </div>
+  </div>
   </body>
   <script src="js/slider.js"></script>
+  <script src="js/modal.js"></script>
 </html>
