@@ -119,3 +119,13 @@ body {
   width: 1140px;
   margin: 0 auto;
 }
+
+
+@media (max-width: 1470px) {
+  .container {
+    width: auto;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

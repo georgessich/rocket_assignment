@@ -23,11 +23,37 @@
 .footer__social-link {
   margin-right: 15px;
 }
+
+@media (max-width: 800px) {
+  .footer__wrap {
+    display: grid;
+  }
+  .footer__logo, .footer__social {
+    grid-row: 1/2;
+  }
+  .footer__nav {
+    grid-row: 2/3;
+  }
+  .footer__nav-list {
+    flex-direction: column;
+    padding-top: 31px;
+  }
+  .footer__nav-link {
+    font-size: 14px;
+  }
+  .footer__social-link img {
+    width: 24px;
+    height: 24px;
+  }
+}
 .header__top {
   padding: 15px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.header__top-wrap {
+  display: flex;
 }
 .header__top-address {
   font-size: 14px;
@@ -86,6 +112,89 @@
 .header__nav-item:hover {
   color: #eeeaea;
 }
+
+@media (max-width: 670px) {
+  .header__desktop {
+    display: none;
+  }
+  .header__mobile {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+  }
+  .header__mobile-burger--bar {
+    width: 37px;
+    height: 4px;
+    margin-bottom: 7px;
+    background-color: #1FA181;
+  }
+  .header__mobile-logo {
+    margin-left: 43px;
+    width: 62px;
+    height: 18px;
+  }
+  .header__mobile-contacts {
+    margin-left: 59px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .header__mobile-contacts--tel {
+    font-size: 16px;
+    font-weight: 700;
+    color: #364844;
+  }
+  .header__mobile-contacts--city {
+    font-size: 13px;
+    color: #364844;
+  }
+  .header__mobile-menu {
+    background-color: rgba(69, 146, 127, 0.9);
+    color: #fff;
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    transition: left 0.3s ease-in-out;
+  }
+  .header__mobile-nav {
+    padding: 20px;
+  }
+  .header__mobile-item {
+    padding: 10px 0;
+  }
+  .header__mobile-link {
+    color: #fff;
+    font-size: 16px;
+  }
+  .header__mobile-menu--btn {
+    font-size: 14px;
+    color: rgb(69, 146, 127);
+    padding: 11px 24px;
+    background-color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 20px;
+  }
+  .header__mobile-menu.active {
+    left: 0;
+  }
+  .header__mobile-burger.active .header__mobile-burger--bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 5px);
+  }
+  .header__mobile-burger.active .header__mobile-burger--bar:nth-child(2) {
+    opacity: 0;
+  }
+  .header__mobile-burger.active .header__mobile-burger--bar:nth-child(3) {
+    transform: rotate(45deg) translate(-10px, -10px);
+  }
+}
+@media (min-width: 670px) {
+  .header__mobile, .header__mobile-menu {
+    display: none;
+  }
+}
 .hero {
   position: relative;
   overflow: hidden;
@@ -112,6 +221,40 @@
   font-size: 16px;
   line-height: 24px;
   width: 30%;
+}
+
+@media (max-width: 1470px) {
+  .hero__image {
+    position: relative;
+  }
+  .hero__wrap {
+    padding: 160px 30px;
+  }
+  .hero__wrap-title, .hero__wrap-text {
+    width: 100%;
+  }
+}
+@media (max-width: 840px) {
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .hero__wrap {
+    padding: 35px;
+  }
+  .hero__wrap-title {
+    font-size: 24px;
+  }
+  .hero__wrap-text {
+    font-size: 14px;
+  }
+  .hero__image {
+    margin-left: 0;
+  }
+}
+@media (max-width: 670px) {
+  .hero {
+    z-index: -1;
+  }
 }
 
 .modal {
@@ -176,6 +319,12 @@
 }
 .modal__content-sent:hover {
   background-color: #00d29f;
+}
+
+@media (max-width: 970px) {
+  .modal__content {
+    width: 90%;
+  }
 }
 @charset "UTF-8";
 .services {
@@ -281,6 +430,48 @@
 .services__slide-img {
   -webkit-clip-path: polygon(6% 0, 100% 0, 100% 100%, 25% 100%);
   clip-path: polygon(6% 0, 100% 0, 100% 100%, 25% 100%);
+}
+
+@media (max-width: 1470px) {
+  .services__slide-text {
+    padding: 55px 20px;
+  }
+}
+@media (max-width: 1140px) {
+  .services__slide-img {
+    width: 55%;
+  }
+}
+@media (max-width: 975px) {
+  .services__slide {
+    flex-direction: column;
+  }
+  .services__slide-text {
+    order: 2;
+  }
+  .services__slide-img {
+    width: 100%;
+    order: 1;
+    clip-path: none;
+  }
+}
+@media (max-width: 460px) {
+  .services__slide-text--title {
+    font-size: 26px;
+  }
+  .services__slide-text--subtitle, .services__slide-text--list li {
+    font-size: 14px;
+  }
+  .services__slide-text--price {
+    font-size: 18px;
+  }
+  .services__slide-text--oldprice {
+    font-size: 14px;
+  }
+  .services__slide-btns--cta, .services__slide-btns--details {
+    font-size: 14px;
+    padding: 11px 29px;
+  }
 }
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=PT+Sans+Caption&display=swap");
 /* Reset and base styles  */
@@ -399,4 +590,13 @@ body {
 .container {
   width: 1140px;
   margin: 0 auto;
+}
+
+@media (max-width: 1470px) {
+  .container {
+    width: auto;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }

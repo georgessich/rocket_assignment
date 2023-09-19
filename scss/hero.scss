@@ -30,3 +30,41 @@
     }
   }
 }
+
+
+@media(max-width:1470px) {
+  .hero__image {
+    position: relative;
+  }
+  .hero__wrap {
+    padding: 160px 30px;
+  }
+  .hero__wrap-title, .hero__wrap-text {
+    width: 100%;
+  }
+}
+
+@media(max-width: 840px) {
+  .hero {
+    flex-direction: column-reverse;
+    &__wrap {
+      padding: 35px;
+      &-title {
+        font-size: 24px;
+      }
+      &-text {
+        font-size: 14px;
+      }
+    }
+    &__image {
+      margin-left: 0;
+    }
+  }
+}
+
+
+@media(max-width: 670px) {
+  .hero {
+    z-index: -1;
+  }
+}

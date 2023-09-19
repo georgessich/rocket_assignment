@@ -94,3 +94,65 @@
     }
   }
 }
+
+
+@media(max-width: 1470px) {
+  .services__slide-text {
+    padding: 55px 20px;
+  }
+}
+
+@media(max-width: 1140px) {
+  .services__slide-img {
+    width: 55%;
+  }
+}
+
+@media(max-width: 975px) {
+  .services{
+
+    &__slide {
+      flex-direction: column;
+      &-text {
+        order: 2;
+      }
+      &-img {
+        width: 100%;
+        order: 1;
+        clip-path: none;
+      }
+    }
+  }
+ 
+}
+
+@media(max-width: 460px) {
+  .services {
+
+    &__slide{
+
+      &-text {
+
+        &--title {
+          font-size: 26px;
+        }
+
+        &--subtitle, &--list li {
+          font-size: 14px;
+        }
+
+        &--price {
+          font-size: 18px;
+        }
+
+        &--oldprice {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .services__slide-btns--cta, .services__slide-btns--details{
+    font-size: 14px;
+    padding: 11px 29px;
+  }
+}

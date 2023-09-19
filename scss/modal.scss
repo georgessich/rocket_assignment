@@ -68,4 +68,8 @@
   }
   
  
-  
+  @media(max-width: 970px) {
+    .modal__content {
+        width: 90%;
+    }
+  }

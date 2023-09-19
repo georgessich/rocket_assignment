@@ -28,3 +28,32 @@
         }
     }
 }
+
+
+@media(max-width: 800px) {
+    .footer__wrap {
+        display: grid;
+    }
+    .footer__logo, .footer__social {
+        grid-row: 1/2;
+    }
+    .footer__nav {
+        grid-row: 2/3;
+        
+        &-list {
+            flex-direction: column;
+            padding-top: 31px;
+        }
+
+        &-link {
+            font-size: 14px;
+        }
+    }
+
+    .footer__social-link img {
+        width: 24px;
+        height: 24px;
+    }
+
+
+}

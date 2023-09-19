@@ -4,7 +4,7 @@ const modal = document.getElementById('myModal');
 const emailForm = document.getElementById('emailForm');
 const modalContent = document.querySelector('.modal__content'); 
 const ctaButtons = document.querySelectorAll('.services__slide-btns--cta');
-
+const mobileMenuBtn = document.querySelector(".header__mobile-menu--btn");
 function openModal() {
   modal.style.display = 'flex';
 }
@@ -32,3 +32,5 @@ modal.addEventListener('click', (e) => {
     closeModal();
   }
 });
+
+mobileMenuBtn.addEventListener('click', openModal);
