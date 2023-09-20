@@ -430,6 +430,7 @@
 .services__slide-img {
   -webkit-clip-path: polygon(6% 0, 100% 0, 100% 100%, 25% 100%);
   clip-path: polygon(6% 0, 100% 0, 100% 100%, 25% 100%);
+  border-radius: 5px;
 }
 
 @media (max-width: 1470px) {
